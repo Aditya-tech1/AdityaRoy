@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+::-webkit-scrollbar{
+    background-color: #000;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: #333;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #222;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+.active-nav{
+    color: #ddd;
+
+}
+/* Footer */
+footer {
+    height: 5vh;
+    text-align: center;
+    border-top: 0.5px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 88vh;
+}
+
+main>h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.wrap {
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #eee;
+    font-size: 65px;
+}
+
+main>p {
+    margin-top: 20px;
+    width: 45%;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.background_effect{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+.shape{
+    /* top: 50px; */
+    /* bottom: -50px; */
+    width: 200px;
+    /* height: 200px; */
+    aspect-ratio: 1/1;
+    position: fixed;
+    background-color: #33333370;
+    z-index: -5;
+    display: block;
+}
+#rect{
+    right: 20%;
+    animation: rect 15s linear infinite;
+    width: 150px;
+    
+}
+#round_rect{
+    border-radius: 10px ;
+    right: 70%;
+    animation: round_rect 10s linear infinite;
+    
+}
+#circ{
+    border-radius: 50%;
+    
+    right: 50%;
+    animation: circ 6s linear infinite;
+}
+#circ2{
+    width: 100px;
+    border-radius: 50%;
+    right: 10%;
+    animation: circ2 4s linear infinite;
+}
+
+#line1,#line2,#line3,#line4{
+    width: 200px;
+    height: 5px;
+    right: 55%;
+    animation: line1 10s linear infinite;
+}
+#line2{
+    right: 30%;
+    animation: line1 5s linear infinite;
+}
+#line3{
+    right: 5%;
+    animation: line1 8s linear infinite;
+}
+#line4{
+    right: 90%;
+    animation: line1 12s linear infinite;
+}
+
+@keyframes rect{
+    0%{
+        bottom: -50%;
+        rotate: 0deg;
+    }
+    100%{
+        bottom: 100%;
+        rotate: 220deg;
+    }
+}
+@keyframes round_rect{
+    0%{
+        bottom: -50%;
+    }
+    100%{
+        bottom: 100%;
+        rotate: 90deg;
+    }
+}
+@keyframes circ{
+    0%{
+        bottom: -50%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+@keyframes circ2{
+    0%{
+        bottom: -50%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+@keyframes line1{
+    0%{
+        bottom: -50%;
+        
+    }
+    100%{
+        bottom: 100%;
+        rotate: -360deg;
+    }
+}
+    
