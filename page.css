@@ -16,7 +16,7 @@ main>h2{
     display: flex;
     flex-direction: row;
     margin-top: 25px;
-    gap:  0 50px;
+    gap: 0 50px;
 }
 .about p{
     width: 50%;
@@ -74,6 +74,20 @@ main>h2{
     background-size: contain;
     cursor: pointer;
 }
+#full_image::before{
+    content: 'x';
+    position: absolute;
+    font-size: 15px;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-color: #444;
+    color: #fff;
+}
 
 /* Project Page */
 
@@ -118,6 +132,8 @@ main>h2{
     margin: auto;
     filter: brightness(80%) ;
     border-radius: 5px;
+    width: 45%;
+    height: 95%;
 }
 .con-form{
     /* padding: 0 5%; */

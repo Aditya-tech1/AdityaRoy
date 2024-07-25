@@ -1,0 +1,162 @@
+@media(max-width: 1240px){
+    
+    .about{
+
+        margin: 20px 0 60px 0;
+    }
+    .about>p{
+        width: 60%;
+    }
+    .about>img{
+        margin: 0;
+        height: 50vh;
+    }
+    .cert{
+        margin: 20px 0 60px 0;
+    }
+    .proj{
+        margin: 20px 0 60px 0;
+    }
+    .project-item{
+        width: 35%;
+        height: auto;
+    }
+    .contact{
+        margin: 20px 0 60px 0;
+    }
+    .contact>iframe{
+        width: 40%;
+        height: 25em;
+    }
+    .con-form>form{
+        width: 100%;
+    }
+}
+@media(max-width: 800px){
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 80%;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about>p{
+        width: 100%;
+        margin: 20px 0 60px 0;
+    }
+    .about>img{
+        width: 20em;
+        aspect-ratio: 1/1;
+        margin: auto;
+    }
+    .cert{
+        grid-template-columns: auto auto;
+        margin: 20px 0 60px 0;
+    }
+    .project-item{
+        width: 45%;
+        height: auto;
+        margin: 20px 0 60px 0;
+    }
+    .contact{
+        height: auto;
+        margin: 20px 0 60px 0;
+        flex-direction: column;
+    }
+    .contact>iframe{
+        height: 15em;
+        width: 100%;
+    }
+    .con-form{
+        width: 60%;
+    }
+    .con-form>form{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+}
+@media (max-width: 550px){
+
+    header{
+        position: fixed;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        background-color: #111;
+        height: 100%;
+        width: 80%;
+        right: 0;
+        top: 0;
+        z-index: 50;
+        transform: translateX(100%);
+    }
+    nav>a{
+        padding: 10px 0;
+    }
+    .ham{
+        display: block;
+    }
+    #crs{
+        display: none;
+    }
+    main{
+        height: auto;
+    }
+    main>h2{
+        font-size: 30px;
+    }
+    .about{
+        flex-direction: column-reverse;
+        
+        width: 100%;
+    }
+
+    .about p{
+        width: 100%;
+        margin: 20px 0 60px 0;
+    }
+    
+    .about img{
+        height: auto;
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    .cert{
+        grid-template-columns: auto;
+    }
+    .proj{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 60px 0;
+    }
+    .project-item{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    
+    .contact{
+        flex-direction: column;
+        height: auto;
+        margin: 20px 0 60px 0;
+    }
+    .contact>iframe{
+        width: 100%;
+        height: 15em;
+    }
+    .con-form{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .con-form>form{
+        width: 100%;
+    }
+    
+}
